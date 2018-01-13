@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.abhaya.blood.PhoneNumberVerificationActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:background="@drawable/monument"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_gravity="center"
+
+            android:textSize="20sp"
+            android:id="@+id/textView_enter_mobnmbr"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_donor_mobile_number" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="10 digit Mobile number"
+            android:textColorHint="#000000"
+
+            android:textColor="@color/colorPrimaryDark">
+        <EditText
+            android:id="@+id/editText_enter_mobnmbr"
+            android:layout_marginTop="20dp"
+
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+
+
+            android:maxLength="10"
+            android:textColor="#000000"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_send_otp"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Send OTP" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textview_enter_verfctn_code"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Enter the Verification Code" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="OTP"
+            android:textColorHint="#000000"
+
+            android:textColor="#000000">
+        <EditText
+            android:layout_marginTop="20dp"
+
+            android:id="@+id/editText_enter_vrfctn_code"
+
+            android:layout_width="300dp"
+
+            android:layout_gravity="center"
+
+
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_procd_to_rgstr"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:background="@drawable/button_shape"
+            android:layout_height="wrap_content"
+            android:text="Next>>" />
+    </LinearLayout>
+
+</RelativeLayout>
