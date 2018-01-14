@@ -1,0 +1,19 @@
+checkboxmale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                                    @Override
+                                                    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                                                        if (isChecked) {
+                                                            Toast.makeText(DonorReg.this, "male", Toast.LENGTH_SHORT).show();
+                                                            checkboxfemale.setEnabled(false); // disable checkbox
+                                                        }
+                                                    }
+                                                });
+
+        checkboxfemale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(DonorReg.this, "Female", Toast.LENGTH_SHORT).show();
+                    checkboxmale.setEnabled(false); // disable checkbox
+                }
+            }
+        });
