@@ -1,0 +1,30 @@
+checMale.setOnClickListener(new View.OnClickListener(){
+
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+            sex = "Male";
+            if(checMale.isChecked()){
+                checMale.setChecked(false);
+                checFemale.setEnabled(true);
+            }else{
+                checMale.setChecked(true);
+                checFemale.setEnabled(false);
+           }  
+        }
+});
+checFemale.setOnClickListener(new View.OnClickListener(){ {
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+            sex = "Female";
+            if(checFemale.isChecked()){
+               checFemale.setCheck(false);
+               checkMale.setEnabled(true);
+            }
+            else{
+               checFemale.setCheck(true);
+               checkMale.setEnabled(false);
+            } 
+        }
+});
