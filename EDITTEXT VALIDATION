@@ -1,0 +1,28 @@
+Here's an EditText and a Button:
+
+EditText myEditText;
+Button button;
+In your onCreate():
+
+myEditText = (EditText) findViewById(R.id.edittext);
+button = (Button) findViewById(R.id.button);
+Say you submit or use the value that a user types in the myEditText using the button. Set an 'OnClickListener' to this button:
+
+button.setOnClickListener(new OnClickListener() {
+    public void onClick(View v) {
+        if (mEditText.length() < 1 ||
+            mEditText.length() > 175) {
+
+               mEditText.setError("Value should be between 1 and 175 characters in length");
+
+               mEditText.requestFocus();
+        } else {
+
+            // Value is valid (between 1 and 175 characters long)
+
+               String text = mEditText.getText().toString();
+
+            // submit
+        } 
+    }
+});
