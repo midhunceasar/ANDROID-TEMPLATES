@@ -1,0 +1,19 @@
+ @BindView(R.id.radiogender)
+    RadioGroup mGenderGroup;
+
+    @OnCheckedChanged({R.id.radioFemale,R.id.radioMale})
+    public void onItemChecked(CompoundButton button, boolean checked)
+    {
+        if(checked) {
+            switch (button.getId()) {
+                case R.id.radioFemale:
+                    System.out.println("Selected Item Female");
+                    break;
+                case R.id.radioMale:
+                    // do stuff
+                    System.out.println("Selected Item Male");
+                    break;
+            }
+        }
+
+    }
